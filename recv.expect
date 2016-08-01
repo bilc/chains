@@ -1,0 +1,4 @@
+spawn ssh -f -p PORT USER@HOST  "nc -l NCLISTENPORT -d > STOREFILE "
+expect "assword:" 
+send "PASSWORD\r" 
+interact

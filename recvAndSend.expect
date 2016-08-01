@@ -1,0 +1,4 @@
+spawn ssh -f -p PORT USER@HOST  "nc -l NCLISTENPORT -d | tee STOREFILE  | nc NEXTHOST NEXTNCLISTENPORT "
+expect "assword:" 
+send "PASSWORD\r" 
+interact 
